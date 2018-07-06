@@ -24,7 +24,8 @@ class Auth extends MY_Controller {
 	{	
 		$this->logged_in_check();
 
-		$data['logged_in'] = $this->session->userdata("logged_in");
+		$data['logged_in'] = '';
+		$data['success'] = '';
 
 		$this->load->view("templates/header", $data);
 		$this->load->view("auth");
@@ -43,9 +44,9 @@ class Auth extends MY_Controller {
 				$this->session->set_flashdata("error_signin", "Username or Password is invalid");
 				$data['logged_in'] = $this->session->userdata("logged_in");
 
-		$this->load->view("templates/header", $data);
-		$this->load->view("auth");
-		$this->load->view("templates/footer");
+				$this->load->view("templates/header", $data);
+				$this->load->view("auth");
+				$this->load->view("templates/footer");
 			}
 			else
 			{

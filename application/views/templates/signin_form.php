@@ -1,6 +1,7 @@
 <?php $error_signin = $this->session->flashdata('error_signin'); ?>
+<?php $success = $this->session->flashdata('success'); ?>
 <ul class="nav navbar-nav navbar-right">
-	<li class="dropdown button <?php echo $error_signin ? 'open' : '' ?>">
+	<li class="dropdown button <?php echo ($error_signin or $success) ? 'open' : '' ?>">
 		<a class="dropdown-toggle" data-toggle="dropdown" role="button">
 			<span class="glyphicon glyphicon-log-in"></span>
 			Sign In
@@ -10,6 +11,7 @@
 				<?php echo form_open('auth/signin'); ?>
 					<div class="col-lg-12 animated fadeIn">
 						<h3>Sign In</h3>
+						<?php echo $success ? '<div class="alert alert-success">'.$success.'</div>' : ''; ?>
 						<?php echo $error_signin ? '<div class="alert alert-warning">'.$error_signin.'</div>' : ''; ?>
 
 						<!-- Textedit Username -->
