@@ -40,7 +40,7 @@ class Auth extends MY_Controller {
 			// check the username & password of user
 			$status = $this->auth->validate();
 			if ($status == ERR_INVALID_USERNAME or $status == ERR_INVALID_PASSWORD) {
-				$this->session->set_flashdata("error", "Username or Password is invalid");
+				$this->session->set_flashdata("error_signin", "Username or Password is invalid");
 				$data['logged_in'] = $this->session->userdata("logged_in");
 
 		$this->load->view("templates/header", $data);
@@ -67,7 +67,11 @@ class Auth extends MY_Controller {
 		if ($this->form_validation->run() == TRUE)
 		{
 			$this->auth->user_signup();
-			$this->session->set_flashdata('success', 'Username was created! Please, sign in now!');
+			$this->session->set_flashdata('success', 'Username was created! Please, Sign In now!');
+		}
+		else
+		{
+			$this->session->set_flashdata('error', 'Error filling data');
 		}
 
 		$data['logged_in'] = $this->session->userdata("logged_in");

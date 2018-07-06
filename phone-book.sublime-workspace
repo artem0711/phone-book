@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"N",
+				"navbar \tBootstrap 3 Class"
+			],
+			[
+				"dropdown",
+				"dropdown-menu \tBootstrap 3 Class"
+			],
+			[
+				"load",
+				"load_library\tCI - Load Library"
+			],
+			[
+				"form_va",
+				"form_validation"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"form",
+				"form_validation\tCI - Form Validation Rule"
+			],
+			[
+				"rig",
+				"pull-right \tBootstrap 3 Class"
+			],
+			[
+				"btn",
+				"btn-danger \tBootstrap 3 Class"
+			],
+			[
+				"bt",
+				"btn \tBootstrap 3 Class"
+			],
+			[
+				"edit",
+				"editinfo"
+			],
+			[
+				"ERR",
+				"ERR_INVALID_PASSWORD〔constant〕"
+			],
+			[
+				"repl",
+				"dba_replace"
+			],
+			[
+				"col-md-of",
+				"col-md-offset-4 \tBootstrap 3 Class"
+			],
+			[
 				"encr",
 				"encryption"
 			],
@@ -18,14 +70,6 @@
 			[
 				"en",
 				"encryption"
-			],
-			[
-				"load",
-				"load_library\tCI - Load Library"
-			],
-			[
-				"user",
-				"users"
 			],
 			[
 				"__c",
@@ -72,10 +116,6 @@
 				"users"
 			],
 			[
-				"form_va",
-				"form_validation\tCI - Form Validation Rule"
-			],
-			[
 				"tele",
 				"$telephones〔variable〕"
 			],
@@ -86,10 +126,6 @@
 			[
 				"usern",
 				"$username〔variable〕"
-			],
-			[
-				"form",
-				"form_validation_sv\tCI - Form Validation Set Value"
 			],
 			[
 				"gl",
@@ -186,10 +222,6 @@
 			[
 				"f",
 				"flashdata\tCI - Flashdata"
-			],
-			[
-				"ERR",
-				"ERR_INVALID_USERNAME〔constant〕"
 			],
 			[
 				"q",
@@ -323,24 +355,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "application/controllers/Auth.php",
-			"settings":
-			{
-				"buffer_size": 2555,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/models/Auth_model.php",
-			"settings":
-			{
-				"buffer_size": 2182,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -395,33 +409,38 @@
 		"/C/OSPanel/domains/phone-book/application/core",
 		"/C/OSPanel/domains/phone-book/application/models",
 		"/C/OSPanel/domains/phone-book/application/views",
-		"/C/OSPanel/domains/phone-book/application/views/templates",
-		"/C/OSPanel/domains/phone-book/assets",
-		"/C/OSPanel/domains/phone-book/assets/css"
+		"/C/OSPanel/domains/phone-book/application/views/templates"
 	],
 	"file_history":
 	[
-		"/C/OSPanel/domains/phone-book/application/views/templates/signup_form.php",
-		"/C/OSPanel/domains/phone-book/application/models/Auth_model.php",
+		"/C/OSPanel/domains/phone-book/README.md",
+		"/C/OSPanel/domains/phone-book/application/config/config.php",
 		"/C/OSPanel/domains/phone-book/application/views/templates/header.php",
-		"/C/OSPanel/domains/phone-book/application/views/dashboard.php",
-		"/C/OSPanel/domains/phone-book/application/views/templates/footer.php",
-		"/C/OSPanel/domains/phone-book/application/views/contacts.php",
+		"/C/OSPanel/domains/phone-book/application/views/templates/menu.php",
 		"/C/OSPanel/domains/phone-book/application/views/auth.php",
-		"/C/OSPanel/domains/phone-book/application/views/templates/login_form.php",
-		"/C/OSPanel/domains/phone-book/application/views/templates/register_form.php",
 		"/C/OSPanel/domains/phone-book/application/controllers/Auth.php",
 		"/C/OSPanel/domains/phone-book/application/controllers/Contacts.php",
+		"/C/OSPanel/domains/phone-book/application/views/changepassword.php",
+		"/C/OSPanel/domains/phone-book/application/views/templates/signup_form.php",
+		"/C/OSPanel/domains/phone-book/application/views/contacts.php",
+		"/C/OSPanel/domains/phone-book/application/views/editinfo.php",
+		"/C/OSPanel/domains/phone-book/application/models/Auth_model.php",
+		"/C/OSPanel/domains/phone-book/index.php",
+		"/C/OSPanel/domains/phone-book/.htaccess",
+		"/C/OSPanel/domains/phone-book/application/views/templates/editinfo.php",
+		"/C/OSPanel/domains/phone-book/application/views/templates/signin_form.php",
+		"/C/OSPanel/domains/phone-book/application/config/doctypes.php",
+		"/C/OSPanel/domains/phone-book/application/views/dashboard.php",
+		"/C/OSPanel/domains/phone-book/application/views/templates/footer.php",
+		"/C/OSPanel/domains/phone-book/application/views/templates/login_form.php",
+		"/C/OSPanel/domains/phone-book/application/views/templates/register_form.php",
 		"/C/OSPanel/domains/phone-book/application/core/MY_Controller.php",
-		"/C/OSPanel/domains/phone-book/application/views/templates/menu.php",
 		"/C/OSPanel/domains/phone-book/assets/css/helper.css",
 		"/C/OSPanel/domains/phone-book/application/views/navbar.php",
 		"/C/OSPanel/domains/phone-book/application/controllers/Dashboard.php",
-		"/C/OSPanel/domains/phone-book/application/config/config.php",
 		"/C/OSPanel/domains/phone-book/application/controllers/Welcome.php",
 		"/C/OSPanel/domains/phone-book/application/config/autoload.php",
 		"/C/OSPanel/domains/phone-book/application/config/routes.php",
-		"/C/OSPanel/domains/phone-book/index.php",
 		"/C/OSPanel/domains/phone-book/application/config/constants.php",
 		"/C/OSPanel/domains/phone-book/application/config/database.php",
 		"/C/OSPanel/domains/phone-book/application/models/Users_model.php",
@@ -479,7 +498,7 @@
 	],
 	"find":
 	{
-		"height": 43.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
@@ -512,75 +531,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "application/controllers/Auth.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2555,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								957,
-								957
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 378.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "application/models/Auth_model.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2182,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								390,
-								390
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 63.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 38.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -617,7 +575,7 @@
 	"project": "phone-book.sublime-project",
 	"replace":
 	{
-		"height": 72.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -1,4 +1,5 @@
-<?php 
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
 /**
  * 
  */
@@ -74,7 +75,7 @@ class Contacts extends MY_Controller
 		$this->_data['logged_in'] = $this->session->userdata('logged_in');
 		$this->_data['user'] = $this->auth->get_user_info($this->_id);
 		$this->load->view('templates/header', $this->_data);
-		$this->load->view('templates/menu');
+		$this->load->view('templates/menu', $this->_data);
 		$this->load->view('editinfo', $this->_data);
 		$this->load->view('templates/footer');	
 	}

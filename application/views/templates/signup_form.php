@@ -1,5 +1,7 @@
+<?php $success = $this->session->flashdata('success'); ?>
+<?php $error = $this->session->flashdata('error'); ?>
 <ul class="nav navbar-nav navbar-right">
-	<li class="dropdown button">
+	<li class="dropdown button <?php echo ($success or $error) ? 'open' : '' ?>">
 		<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">
 			<span class="glyphicon glyphicon-new-window"></span>
 			Sign Up
@@ -9,8 +11,9 @@
 				<?php echo form_open('auth/signup'); ?>
 					<div class="col-lg-12 animated fadeIn">
 						<h3>Sign Up</h3>
-						<?php $success = $this->session->flashdata('success'); ?>
+						
 						<?php echo $success ? '<div class="alert alert-success">'.$success.'</div>' : ''; ?>
+						<?php echo $error ? '<div class="alert alert-warning">'.$error.'</div>' : ''; ?>
 
 						<!-- Textedit Username -->
 						<div class="form-group">

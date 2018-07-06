@@ -41,6 +41,7 @@ class Auth_model extends CI_Model {
 			// not found
 			return ERR_INVALID_USERNAME;
 		}
+		return ERR_NONE;
 	}
 
 	public function check_password($id)

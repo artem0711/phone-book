@@ -1,6 +1,7 @@
+<?php $error_signin = $this->session->flashdata('error_signin'); ?>
 <ul class="nav navbar-nav navbar-right">
-	<li class="dropdown button">
-		<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">
+	<li class="dropdown button <?php echo $error_signin ? 'open' : '' ?>">
+		<a class="dropdown-toggle" data-toggle="dropdown" role="button">
 			<span class="glyphicon glyphicon-log-in"></span>
 			Sign In
 		</a>
@@ -9,33 +10,32 @@
 				<?php echo form_open('auth/signin'); ?>
 					<div class="col-lg-12 animated fadeIn">
 						<h3>Sign In</h3>
-						<?php $error = $this->session->flashdata('error'); ?>
-						<?php echo $error ? '<div class="alert alert-warning">'.$error.'</div>' : ''; ?>
+						<?php echo $error_signin ? '<div class="alert alert-warning">'.$error_signin.'</div>' : ''; ?>
 
 						<!-- Textedit Username -->
 						<div class="form-group">
-							<?php $error = form_error('username_signin', '<p class="text-danger">', '</p>') ?>
-								<div class="input-group <?php echo $error ? 'has-error' : '' ?>">
+							<?php $error_signin = form_error('username_signin', '<p class="text-danger">', '</p>') ?>
+								<div class="input-group <?php echo $error_signin ? 'has-error' : '' ?>">
 									<span class="input-group-addon">
 										<span class="glyphicon glyphicon-user">
 										</span>
 									</span>
 									<input type="text" id="username_signin" name="username_signin" class="form-control" placeholder="Username" autofocus />
 								</div>
-							<?php echo $error; ?>
+							<?php echo $error_signin; ?>
 						</div>
 						
 						<!-- Textedit Password -->
 						<div class="form-group">
-						<?php $error = form_error('password_signin', '<p class="text-danger">', '</p>') ?>
-							<div class="input-group <?php echo $error ? 'has-error' : '' ?>">
+						<?php $error_signin = form_error('password_signin', '<p class="text-danger">', '</p>') ?>
+							<div class="input-group <?php echo $error_signin ? 'has-error' : '' ?>">
 								<span class="input-group-addon">
 									<span class="glyphicon glyphicon-lock">
 									</span>
 								</span>
 								<input type="password" id="password_signin" name="password_signin" class="form-control" placeholder="Password" />
 							</div>
-						<?php echo $error; ?>
+						<?php echo $error_signin; ?>
 						</div>
 				
 						<!-- Login button -->
