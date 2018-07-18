@@ -4,6 +4,102 @@
 		"selected_items":
 		[
 			[
+				"has",
+				"hasClass\t.hasClass()"
+			],
+			[
+				"form-",
+				"form-group \tBootstrap 3 Class"
+			],
+			[
+				"phon",
+				"phones"
+			],
+			[
+				"repla",
+				"replaceWith〔function〕"
+			],
+			[
+				"add",
+				"addPhone"
+			],
+			[
+				"repl",
+				"replaceWith\t.replaceWith()"
+			],
+			[
+				"phone",
+				"phoneEdit"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"pho",
+				"phoneEdit"
+			],
+			[
+				"get",
+				"getElementsByName〔function〕"
+			],
+			[
+				"form",
+				"formGroup"
+			],
+			[
+				"gete",
+				"getElementsByName〔function〕"
+			],
+			[
+				"input-group",
+				"input-group-btn \tBootstrap 3 Class"
+			],
+			[
+				"btn-s",
+				"btn-success \tBootstrap 3 Class"
+			],
+			[
+				"doc",
+				"document〔variable〕"
+			],
+			[
+				"ph",
+				"$phone〔variable〕"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"c",
+				"click\t.click()"
+			],
+			[
+				"btn-",
+				"btn-default \tBootstrap 3 Class"
+			],
+			[
+				"panel-",
+				"panel-heading \tBootstrap 3 Class"
+			],
+			[
+				"load",
+				"load_view\tCI - Load View"
+			],
+			[
+				"temp",
+				"PDF_begin_template"
+			],
+			[
+				"uri",
+				"uri_segment\tCI - URI Segment"
+			],
+			[
+				"ERR",
+				"ERR_NONE〔constant〕"
+			],
+			[
 				"N",
 				"navbar \tBootstrap 3 Class"
 			],
@@ -12,20 +108,12 @@
 				"dropdown-menu \tBootstrap 3 Class"
 			],
 			[
-				"load",
-				"load_library\tCI - Load Library"
-			],
-			[
 				"form_va",
 				"form_validation"
 			],
 			[
 				"user",
 				"username"
-			],
-			[
-				"form",
-				"form_validation\tCI - Form Validation Rule"
 			],
 			[
 				"rig",
@@ -42,14 +130,6 @@
 			[
 				"edit",
 				"editinfo"
-			],
-			[
-				"ERR",
-				"ERR_INVALID_PASSWORD〔constant〕"
-			],
-			[
-				"repl",
-				"dba_replace"
 			],
 			[
 				"col-md-of",
@@ -92,10 +172,6 @@
 				"auth"
 			],
 			[
-				"form-",
-				"form-group \tBootstrap 3 Class"
-			],
-			[
 				"col-",
 				"col-lg-6 \tBootstrap 3 Class"
 			],
@@ -136,10 +212,6 @@
 				"panel-title \tBootstrap 3 Class"
 			],
 			[
-				"panel-",
-				"panel-primary \tBootstrap 3 Class"
-			],
-			[
 				"table",
 				"table-bordered \tBootstrap 3 Class"
 			],
@@ -178,10 +250,6 @@
 			[
 				"che",
 				"check_user"
-			],
-			[
-				"fun",
-				"function"
 			],
 			[
 				"user_",
@@ -268,10 +336,6 @@
 				"col-sm-6"
 			],
 			[
-				"c",
-				"class\tAttr"
-			],
-			[
 				"vali",
 				"validation_errors〔function〕"
 			],
@@ -316,10 +380,6 @@
 				"function"
 			],
 			[
-				"uri",
-				"uri_string〔function〕"
-			],
-			[
 				"site",
 				"site_url〔function〕"
 			],
@@ -334,10 +394,6 @@
 			[
 				"file_e",
 				"file_exists〔function〕"
-			],
-			[
-				"add",
-				"add_theme_support"
 			],
 			[
 				"wp",
@@ -355,6 +411,40 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "application/views/phones.php",
+			"settings":
+			{
+				"buffer_size": 1335,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/templates/footer.php",
+			"settings":
+			{
+				"buffer_size": 1916,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/models/Auth_model.php",
+			"settings":
+			{
+				"buffer_size": 3319,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/Contacts.php",
+			"settings":
+			{
+				"buffer_size": 3041,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -409,26 +499,28 @@
 		"/C/OSPanel/domains/phone-book/application/core",
 		"/C/OSPanel/domains/phone-book/application/models",
 		"/C/OSPanel/domains/phone-book/application/views",
-		"/C/OSPanel/domains/phone-book/application/views/templates"
+		"/C/OSPanel/domains/phone-book/application/views/templates",
+		"/C/OSPanel/domains/phone-book/assets",
+		"/C/OSPanel/domains/phone-book/assets/js"
 	],
 	"file_history":
 	[
-		"/C/OSPanel/domains/phone-book/README.md",
-		"/C/OSPanel/domains/phone-book/application/config/config.php",
-		"/C/OSPanel/domains/phone-book/application/views/templates/header.php",
-		"/C/OSPanel/domains/phone-book/application/views/templates/menu.php",
-		"/C/OSPanel/domains/phone-book/application/views/auth.php",
 		"/C/OSPanel/domains/phone-book/application/controllers/Auth.php",
 		"/C/OSPanel/domains/phone-book/application/controllers/Contacts.php",
-		"/C/OSPanel/domains/phone-book/application/views/changepassword.php",
-		"/C/OSPanel/domains/phone-book/application/views/templates/signup_form.php",
 		"/C/OSPanel/domains/phone-book/application/views/contacts.php",
+		"/C/OSPanel/domains/phone-book/application/views/templates/signin_form.php",
+		"/C/OSPanel/domains/phone-book/application/views/changepassword.php",
+		"/C/OSPanel/domains/phone-book/application/views/templates/menu.php",
 		"/C/OSPanel/domains/phone-book/application/views/editinfo.php",
+		"/C/OSPanel/domains/phone-book/application/views/templates/signup_form.php",
+		"/C/OSPanel/domains/phone-book/application/views/auth.php",
 		"/C/OSPanel/domains/phone-book/application/models/Auth_model.php",
+		"/C/OSPanel/domains/phone-book/application/views/templates/header.php",
+		"/C/OSPanel/domains/phone-book/README.md",
+		"/C/OSPanel/domains/phone-book/application/config/config.php",
 		"/C/OSPanel/domains/phone-book/index.php",
 		"/C/OSPanel/domains/phone-book/.htaccess",
 		"/C/OSPanel/domains/phone-book/application/views/templates/editinfo.php",
-		"/C/OSPanel/domains/phone-book/application/views/templates/signin_form.php",
 		"/C/OSPanel/domains/phone-book/application/config/doctypes.php",
 		"/C/OSPanel/domains/phone-book/application/views/dashboard.php",
 		"/C/OSPanel/domains/phone-book/application/views/templates/footer.php",
@@ -512,6 +604,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"'",
+			"{\n",
+			"var",
 			"enc",
 			">\n"
 		],
@@ -521,6 +616,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -531,8 +627,124 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "application/views/phones.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								439,
+								439
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 93.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/views/templates/footer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1916,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								316,
+								316
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/models/Auth_model.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3319,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								554,
+								554
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 208.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/controllers/Contacts.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3041,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1327.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],

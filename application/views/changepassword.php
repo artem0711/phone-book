@@ -4,7 +4,10 @@
 			<div class="col-lg-12 animated bounceIn">
 				<div class="panel panel-primary">
 					<div class="panel-heading">
-						<h3 class="panel-title text-center">Change password</h3>
+						<h3 class="panel-title text-center">
+							<span class="glyphicon glyphicon-lock"></span>
+							Change password
+						</h3>
 					</div>
 					<div class="panel-body">
 						<?php $error = $this->session->flashdata('error'); ?>

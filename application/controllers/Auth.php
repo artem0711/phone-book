@@ -25,15 +25,23 @@ class Auth extends MY_Controller {
 		$this->logged_in_check();
 
 		$data['logged_in'] = '';
+		$data['js_load'] = '';
 		$data['success'] = '';
 
 		$this->load->view("templates/header", $data);
 		$this->load->view("auth");
-		$this->load->view("templates/footer");
+		$this->load->view("templates/footer", $data);
 	}
 
 	public function signin()
 	{
+		$this->session->set_flashdata('success', '');
+		$this->session->set_flashdata('error', '');
+
+		$data['logged_in'] = '';
+		$data['js_load'] = '';
+		$data['success'] = '';
+		
 		$this->form_validation->set_rules("username_signin", "Username", "trim|required");
 		$this->form_validation->set_rules("password_signin", "Password", "trim|required");
 		if ($this->form_validation->run() == TRUE) 
@@ -43,10 +51,6 @@ class Auth extends MY_Controller {
 			if ($status == ERR_INVALID_USERNAME or $status == ERR_INVALID_PASSWORD) {
 				$this->session->set_flashdata("error_signin", "Username or Password is invalid");
 				$data['logged_in'] = $this->session->userdata("logged_in");
-
-				$this->load->view("templates/header", $data);
-				$this->load->view("auth");
-				$this->load->view("templates/footer");
 			}
 			else
 			{
@@ -58,10 +62,16 @@ class Auth extends MY_Controller {
 				redirect("contacts");
 			}
 		}
+		$this->load->view("templates/header", $data);
+		$this->load->view("auth");
+		$this->load->view("templates/footer", $data);
 	}
 
 	public function signup()
 	{
+		$this->session->set_flashdata('success', '');
+		$this->session->set_flashdata('error', '');
+		
 		$this->form_validation->set_rules("username_signup", "Username", "trim|required|is_unique[users.username]");
 		$this->form_validation->set_rules("password_signup", "Password", "trim|required|min_length[6]");
 		$this->form_validation->set_rules("passconf_signup", "Password confirmation", "trim|required|min_length[6]|matches[password_signup]");
@@ -76,10 +86,11 @@ class Auth extends MY_Controller {
 		}
 
 		$data['logged_in'] = $this->session->userdata("logged_in");
+		$data['js_load'] = '';
 
 		$this->load->view("templates/header", $data);
 		$this->load->view("auth");
-		$this->load->view("templates/footer");
+		$this->load->view("templates/footer", $data);
 	}
 
 	public function logout()

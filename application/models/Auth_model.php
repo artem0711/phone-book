@@ -91,6 +91,11 @@ class Auth_model extends CI_Model {
 		return $row;
 	}
 
+	public function add_phone($data)
+	{
+		return $this->db->insert('contacts', $data);
+	}
+
 	public function update_user_info($id)
 	{
 		$full_name = $this->input->post('full_name');
@@ -106,9 +111,9 @@ class Auth_model extends CI_Model {
 		$this->db->update('users', $data);
 	}
 
-	public function get_user_phones($id)
+	public function get_user_phones($user_id)
 	{
-		$query = $this->db->get_where('contacts', array('user_id', $id));
+		$query = $this->db->get_where('contacts', array('user_id' => $user_id));
 		return $query->result();
 	}
 
@@ -138,6 +143,28 @@ class Auth_model extends CI_Model {
 			'salt' => $salt
 		);
 
-		return $this->db->insert('users', $data);
+		$this->db->insert('users', $data);
+		return $this->db->insert_id();
+	}
+
+	public function get_phone_by_id($id)
+	{
+		$query = $this->db->get_where('contacts', array('id' => $id));
+		$row = $query->row_array();
+		return $row;
+	}
+
+	public function delete_phone($id)
+	{
+		$this->db->delete('contacts', array('id' => $id));
+		return $this->db->affected_rows();
+	}
+
+	public function update_phone($data)
+	{
+		$this->db->set('telephone', $data['telephone']);
+		$this->db->where('id', $data['id']);
+		$this->db->update('contacts');
+		return $this->db->affected_rows();
 	}
 }

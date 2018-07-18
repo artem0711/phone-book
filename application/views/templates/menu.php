@@ -7,14 +7,17 @@
 		</div>
 		<ul class="nav navbar-nav">
 			<li <?php echo $this->uri->segment(2) == 'editinfo' ? 'class="active"' : ''; ?>>
-				<a href="<?php echo base_url(); ?>contacts/editinfo">Edit My info</a>
+				<a href="<?php echo base_url(); ?>contacts/editinfo">My Info</a>
+			</li>
+			<li <?php echo $this->uri->segment(2) == 'phones' ? 'class="active"' : ''; ?>>
+				<a href="<?php echo base_url(); ?>contacts/phones">My Phones</a>
 			</li>
 			<li <?php echo (($this->uri->segment(2) == 'changepassword') ? 'class="active"' : ''); ?>>
 				<a href="<?php echo base_url(); ?>contacts/changepassword">Change password</a>
 			</li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<li><a>Welcome, <?php echo $user['username']; ?>!</a></li>
+			<li><p class="navbar-text">Welcome, <?php echo $user['username']; ?>!</p></li>
 		</ul>
 	</div>
 </nav>
