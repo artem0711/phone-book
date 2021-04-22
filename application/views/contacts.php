@@ -13,15 +13,21 @@
 						<table class="table table-bordered">
 							<tr>
 								<td>Fullname</td>
-								<td><?php echo $user['full_name']; ?></td>
+								<td>
+									<? echo $user['full_name']; ?>
+								</td>
 							</tr>
 							<tr>
 								<td>Date of birth</td>
-								<td><?php echo $user['dob']; ?></td>
+								<td>
+									<? echo $user['dob']; ?>
+								</td>
 							</tr>
 							<tr>
 								<td>Position</td>
-								<td><?php echo $user['position']; ?></td>
+								<td>
+									<? echo $user['position']; ?>
+								</td>
 							</tr>
 						</table>
 					</div>
@@ -37,16 +43,19 @@
 					</div>
 					<div class="panel-body">
 						<table class="table table-bordered">
-							<?php if (count($phones) > 0)
-								foreach ($phones as $key)
-								{
-									echo '<tr><td align="center">'.$key->telephone.'</td></tr>';
-								}
-								else
-								{
-									echo '<tr><td align="center">No numbers</td></tr>';
-								}
-							?>
+							<? if (count($phones) > 0): ?>
+							<? foreach ($phones as $phone): ?>
+							<tr>
+								<td align="center">
+									<? echo $phone->telephone; ?>
+								</td>
+							</tr>
+							<? endforeach ?>
+							<? else: ?>
+							<tr>
+								<td align="center">No numbers</td>
+							</tr>
+							<? endif; ?>
 						</table>
 					</div>
 				</div>

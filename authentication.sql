@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июл 06 2018 г., 09:31
--- Версия сервера: 5.7.20
--- Версия PHP: 7.2.0
+-- Время создания: Апр 22 2021 г., 10:12
+-- Версия сервера: 10.4.12-MariaDB
+-- Версия PHP: 7.4.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `authentication`
+-- База данных: `phone-book`
 --
 
 -- --------------------------------------------------------
@@ -29,6 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `contacts` (
+  `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `telephone` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -57,6 +57,7 @@ CREATE TABLE `users` (
 -- Индексы таблицы `contacts`
 --
 ALTER TABLE `contacts`
+  ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `telephone` (`telephone`);
 
 --
@@ -71,10 +72,16 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT для таблицы `contacts`
+--
+ALTER TABLE `contacts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

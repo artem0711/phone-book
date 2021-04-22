@@ -1,7 +1,7 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<? if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Auth_model extends CI_Model {
-
+class Auth_model extends CI_Model
+{
 	private $_data = array();
 
 	public function validate()
@@ -14,16 +14,14 @@ class Auth_model extends CI_Model {
 		$this->db->where('username', $username);
 		$query = $this->db->get('users');
 
-		if ($query->num_rows()) 
-		{
+		if ($query->num_rows()) {
 			// found row by username	
 			$row = $query->row_array();
 
 			// now check for the password
 			$password = sha1($password . config_item('encryption_key'));
 			$password = sha1($password . $row['salt']);
-			if ($row['password'] == $password)
-			{
+			if ($row['password'] == $password) {
 				// we not need password to store in session
 				unset($row['username']);
 				unset($row['password']);
@@ -36,12 +34,10 @@ class Auth_model extends CI_Model {
 
 			// password not match
 			return ERR_INVALID_PASSWORD;
-		}
-		else {
+		} else {
 			// not found
 			return ERR_INVALID_USERNAME;
 		}
-		return ERR_NONE;
 	}
 
 	public function check_password($id)
@@ -56,8 +52,7 @@ class Auth_model extends CI_Model {
 		$password = sha1($password . config_item('encryption_key'));
 		$password = sha1($password . $row['salt']);
 
-		if ($row['password'] == $password)
-		{
+		if ($row['password'] == $password) {
 			$password = $this->input->post('new_password');
 
 			$salt = $this->random_string();
@@ -101,7 +96,7 @@ class Auth_model extends CI_Model {
 		$full_name = $this->input->post('full_name');
 		$dob = $this->input->post('dob');
 		$position = $this->input->post('position');
-		
+
 		$data = array(
 			'full_name' => $full_name,
 			'dob' => $dob,
@@ -123,9 +118,8 @@ class Auth_model extends CI_Model {
 		$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 		$characters_length = strlen($characters);
 		$random_string = '';
-		for ($i = 0; $i < $length; $i++)
-		{
-		    $random_string .= $characters[rand(0, $characters_length - 1)];
+		for ($i = 0; $i < $length; $i++) {
+			$random_string .= $characters[rand(0, $characters_length - 1)];
 		}
 		return $random_string;
 	}
@@ -150,8 +144,7 @@ class Auth_model extends CI_Model {
 	public function get_phone_by_id($id)
 	{
 		$query = $this->db->get_where('contacts', array('id' => $id));
-		$row = $query->row_array();
-		return $row;
+		return $query->row_array();
 	}
 
 	public function delete_phone($id)

@@ -1,13 +1,13 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<? if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class MY_Controller extends CI_Controller {
-
+class MY_Controller extends CI_Controller
+{
 	/**
 	 * '*' all user
 	 * '@' logged in user
 	 * @var string
 	 */
-	protected $access = "*";
+	protected $access = '*';
 
 	public function __construct()
 	{
@@ -18,31 +18,24 @@ class MY_Controller extends CI_Controller {
 
 	public function login_check()
 	{
-		if ($this->access != "*") 
+		if ($this->access != '*') 
 		{
 			// here we check the role of the user
-			if (! $this->permission_check()) {
-				die("<h4>Access denied</h4>");
+			if (!$this->permission_check()) {
+				die('<h4>Access denied</h4>');
 			} 
 
 			// if user try to access logged in page
 			// check does he/she has logged in
 			// if not, redirect to login page
-			if (!$this->session->userdata("logged_in")) {
-				redirect("auth");
+			if (!$this->session->userdata('logged_in')) {
+				redirect('auth');
 			}
 		}
 	}
 
 	public function permission_check()
 	{
-		if ($this->access == "@") {
-			return true;
-		}
-		else
-		{
-			return false;
-		}
+		return ($this->access == '@') ? true : false;
 	}
-
 }
